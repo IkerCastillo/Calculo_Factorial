@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html> 
+	    <head> 
+	        
+	        <title>Factorial</title>
+	        <meta charset="utf-8">
+	         <script language="javascript"> 
+	            
+	            function factorial (){	
+	            var factorial = 1;  
+	            for (var i=1; i <= document.getElementById ('n').value; i++){ 
+	                    factorial *= i; }  document.getElementById ('resultado').value = factorial;}
+	             </script> 
+	        </head> 
+	        <body> 
+	            
+	            <form onsubmit="javascript: factorial ();return (false);" > 
+	            	
+	            	Número: <input type="number" name="n" id="n" /> 
+	                <br/> Factorial: <input type="text" disabled="disabled" name="resultado" id="resultado"/> 
+	                <br/> <input type="submit" value="Calcular"/> 
+	                
+	        </form>     
+	    </body>    
+	</html>
